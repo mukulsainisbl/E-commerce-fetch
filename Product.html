@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <style>
+        #container{
+            width: 60%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+
+        }
+
+        #container > div{
+            text-align: center;
+            border: 1px dashed black;
+            padding-top: 20px;
+        }
+
+
+        #container > div > img{
+            width: 20%;
+        
+        }
+        #welcome{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Product Page</h2>
+    <div id="welcome">
+         <h4 style="color:red;" id="username"></h4>
+    </div>
+    <button  onclick="logout()">Logout</button>
+    <div  id="container">
+
+    </div>
+    
+
+</body>
+</html>
+<script src="Product.js"></script>
